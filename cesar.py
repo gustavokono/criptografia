@@ -1,10 +1,9 @@
-import unidecode as uni #biblioteca para trabalhar com dados de texto que estão em Unicode
+import unidecode as uni #adicionar biblioteca 
 
 def main():
     texto = open("alienista.txt", 'r', encoding="utf8")   #abre o arquivo de texto para poder pegar a frequencia das letras na lingua portuguesa.
-    freq = frequencia_arquivo(texto)    #descobre a frequencia das letras no portugues
+    freq = frequencia_arquivo(texto)    #descobre a frequencia do texto
 
-    #exemplo para testar se o codigo esta funcionando
     codificado = encripta("estou testando meu codigo para o trabalho de matematica discreta", 7) 
     print(codificado)
     print(decodifica(codificado, freq)) #para o decodifica é passado o texto criptografado
